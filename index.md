@@ -201,3 +201,10 @@ Lee, B., Kazi, R. H., Riche, N. H., Carpendale, S., & Drucker, S. M. (2015).
 *DataTone: Managing Ambiguity in Natural Language Interfaces for Data Visualization.*  
 In *Proceedings of the 28th Annual ACM Symposium on User Interface Software & Technology (UIST ’15).* ACM.  
 [DOI: 10.1145/2807442.2807478](https://dl.acm.org/doi/10.1145/2807442.2807478)
+
+Bongshin Lee. (2021). *Natural Language Interfaces for Data Visualization [YouTube Video]*. YouTube.  
+[https://www.youtube.com/watch?v=yjJ3k8fCGVo](https://www.youtube.com/watch?v=yjJ3k8fCGVo)
+
+ResearchGate. (n.d.). *Prototypical process flow of question answering over knowledge bases [Figure]*.  
+[https://www.researchgate.net/figure/Prototypical-process-flow-of-question-answering-over-knowledge-bases_fig2_344268092](https://www.researchgate.net/figure/Prototypical-process-flow-of-question-answering-over-knowledge-bases_fig2_344268092)
+
