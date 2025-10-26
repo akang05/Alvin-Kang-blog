@@ -47,6 +47,9 @@ Human language is **ambiguous and context-dependent**, which presents challenges
 
 This process illustrates how DataTone manages ambiguity in a systematic manner.
 
+<!-- Youtube Video Embed -->
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/yjJ3k8fCGVo" frameborder="0" allowfullscreen></iframe>
+
 ---
 
 ## Compare and Contrast: Traditional Tools vs. DataTone  
@@ -140,6 +143,8 @@ DataTone demonstrates several interaction design features:
   - Users can select whether to group data by region or display individual store margins using bar charts or scatterplots.  
 
 These examples illustrate how interface design supports natural language understanding and balances automation with user input.
+
+![Natural Language Interface Example](assets/nliv-example.png)
 
 ---
 
