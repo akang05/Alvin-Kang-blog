@@ -119,11 +119,27 @@ Displaying uncertainty rather than hiding it helps users understand the system a
 ## Design Examples  
 DataTone demonstrates several interaction design features:  
 
-- Dropdown menus for selecting ambiguous fields.  
-- Icon selectors for choosing chart types (bar, line, scatter).  
-- Tooltips explaining the system’s reasoning.
+- Dropdown menus for selecting ambiguous fields (e.g., “region” could mean state, country, or territory).  
+- Icon selectors for choosing chart types (bar, line, scatter, pie charts).  
+- Tooltips explaining the system’s reasoning.  
+- Inline previews that update visualizations dynamically as users make selections.  
+- Interactive ambiguity panels that display multiple interpretations side by side.  
+- Smart defaults that suggest likely interpretations based on context or prior queries.  
+- Undo and redo functions to allow experimentation with different visualization options.  
 
-These features provide concrete examples of **how interface design supports natural language understanding**.
+**Additional example queries:**  
+- Query: “Show monthly sales trends for the top 5 products.”  
+  - The system dynamically interprets “top 5 products” based on sales data and suggests a line chart for each product.  
+- Query: “Compare total revenue and expenses by department.”  
+  - The ambiguity between separate or combined visualizations is resolved through disambiguation widgets, allowing stacked bars, side-by-side bars, or line comparison charts.  
+- Query: “Show customer acquisition by region and channel for the last year.”  
+  - Multiple dimensions trigger clarification panels so users can select which dimension goes on the x-axis and which on color/shape.  
+- Query: “Highlight the sales increase of new products over the last quarter.”  
+  - DataTone may suggest a filtered line chart with annotations for new product sales trends.  
+- Query: “Show profit margin for each store grouped by region.”  
+  - Users can select whether to group data by region or display individual store margins using bar charts or scatterplots.  
+
+These examples illustrate how interface design supports natural language understanding and balances automation with user input.
 
 ---
 
@@ -165,20 +181,7 @@ This section connects the research to **practical tools used today**.
 
 ---
 
-## Tips for Understanding the Paper  
-To better understand the research:  
-
-1. Review the abstract and figures for an overview.  
-2. Visualize the pipeline: Input → Interpretation → Disambiguation → Visualization.  
-3. Consider examples from your own dataset.  
-4. Focus on the paper’s contributions: shared disambiguation, UX design, and natural language handling.  
-5. Compare with familiar tools to assess trade-offs.
-
-Creating a small dataset and simulating queries can help solidify understanding.
-
----
-
-## Why Does This Matters  
+## Why Does This Matter  
 DataTone demonstrates that AI can **augment human reasoning** rather than replace it. By managing ambiguity collaboratively, it enables a more inclusive and effective approach to data exploration.
 
 ---
@@ -193,4 +196,3 @@ Lee, B., Kazi, R. H., Riche, N. H., Carpendale, S., & Drucker, S. M. (2015).
 *DataTone: Managing Ambiguity in Natural Language Interfaces for Data Visualization.*  
 In *Proceedings of the 28th Annual ACM Symposium on User Interface Software & Technology (UIST ’15).* ACM.  
 [DOI: 10.1145/2807442.2807478](https://dl.acm.org/doi/10.1145/2807442.2807478)
-
