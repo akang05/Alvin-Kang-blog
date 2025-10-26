@@ -1,10 +1,10 @@
-# 📊 DataTone: Managing Ambiguity in Natural Language Interfaces for Data Visualization  
+#DataTone: Managing Ambiguity in Natural Language Interfaces for Data Visualization  
 **By Bongshin Lee, Rubaiat Habib Kazi, Nathalie Henry Riche, Sheelagh Carpendale, and Steven M. Drucker (UIST 2015)**  
 *Blog post by Alvin Kang*  
 
 ---
 
-## 💬 Introduction  
+##Introduction  
 As data becomes more central to decision-making, more people want to explore and visualize it — not just data scientists. But creating charts and dashboards can be hard for non-technical users who don’t know how to code or use complex visualization tools.  
 
 Wouldn’t it be easier if we could just ask the computer in plain English:  
@@ -14,7 +14,7 @@ That’s the question the authors of *DataTone: Managing Ambiguity in Natural La
 
 ---
 
-## 🧩 The Problem: Ambiguity in Natural Language  
+##The Problem: Ambiguity in Natural Language  
 Natural language is powerful — but also messy. When a user types something like “sales by region over time,” there are many possible interpretations:  
 - Which dataset should it use?  
 - Should “region” refer to country, state, or city?  
@@ -26,7 +26,7 @@ The key innovation in *DataTone* is how it **embraces ambiguity** instead of ign
 
 ---
 
-## 💡 The Core Idea: Shared Responsibility Between Human and System  
+##The Core Idea: Shared Responsibility Between Human and System  
 DataTone’s central concept is **shared disambiguation**.  
 Instead of making all the choices itself, the system collaborates with the user.  
 
@@ -40,7 +40,7 @@ This approach combines the **intuitiveness of natural language** with the **prec
 
 ---
 
-## 🖥️ How DataTone Works  
+##How DataTone Works  
 The paper describes how DataTone integrates several components:  
 
 - **Natural Language Parser:** Breaks down the query into meaningful parts such as attributes, metrics, and relationships.  
@@ -52,7 +52,7 @@ As a result, users can create complex visualizations **without needing to learn 
 
 ---
 
-## 🔍 Why This Matters  
+##Why This Matters  
 This research was one of the **first systems to combine natural language interfaces with visualization tools** in a user-friendly way.  
 
 Its impact extends to modern tools we use today — like **Power BI**, **Google Data Studio**, and even **ChatGPT’s chart generation features**.  
@@ -61,7 +61,7 @@ By treating ambiguity as a normal part of communication, DataTone opened the doo
 
 ---
 
-## 🧠 Key Contributions  
+##Key Contributions  
 1. A **framework for managing ambiguity** in natural language visualization systems.  
 2. A working prototype (DataTone) that demonstrates “shared disambiguation.”  
 3. A **user study** showing that people find the system intuitive and effective, even when they’re unfamiliar with data visualization tools.  
@@ -69,7 +69,7 @@ By treating ambiguity as a normal part of communication, DataTone opened the doo
 
 ---
 
-## 📈 Example in Action  
+##Example in Action  
 Imagine you have a sales dataset. You type:  
 > “Show me sales by region last year.”  
 
@@ -79,7 +79,7 @@ This interactive clarification process takes **seconds**, compared to the long t
 
 ---
 
-## 💭 Personal Reflection  
+##Personal Reflection  
 What I found most interesting about *DataTone* is how it captures the **essence of human-computer collaboration**. Instead of pretending AI can perfectly understand us, it accepts that communication is a two-way process.  
 
 I also like how the interface design feels **transparent and respectful**. It doesn’t hide decisions behind the scenes — it invites the user to participate. This makes people more confident and engaged in data exploration.  
@@ -88,7 +88,7 @@ In a world increasingly filled with AI systems, this paper feels ahead of its ti
 
 ---
 
-## 🔗 Reference  
+##Reference  
 Lee, B., Kazi, R. H., Riche, N. H., Carpendale, S., & Drucker, S. M. (2015). *DataTone: Managing Ambiguity in Natural Language Interfaces for Data Visualization.*  
 In *Proceedings of the 28th Annual ACM Symposium on User Interface Software & Technology (UIST ’15).* ACM.  
 DOI: [10.1145/2807442.2807478](https://dl.acm.org/doi/10.1145/2807442.2807478)
