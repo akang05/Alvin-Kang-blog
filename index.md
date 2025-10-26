@@ -10,8 +10,7 @@ layout: default
 ---
 
 ## Introduction  
-As data becomes increasingly central to decision-making, there is a growing need for tools that allow a wider range of users to explore and visualize data, not just data scientists.  
-Creating charts and dashboards, however, can be challenging for users who do not have technical expertise or knowledge of programming.  
+As data becomes increasingly central to decision-making, there is a growing need for tools that allow a wider range of users to explore and visualize data, not just data scientists.  Creating charts and dashboards, however, can be challenging for users who do not have technical expertise or knowledge of programming.  
 
 DataTone addresses this problem by enabling users to type **natural language queries** to generate visualizations while effectively managing the **ambiguities of human language**.
 
@@ -179,16 +178,13 @@ Creating a small dataset and simulating queries can help solidify understanding.
 
 ---
 
-## Why This Matters  
-DataTone demonstrates that AI can **augment human reasoning** rather than replace it.  
-By managing ambiguity collaboratively, it enables a more inclusive and effective approach to data exploration.
+## Why Does This Matters  
+DataTone demonstrates that AI can **augment human reasoning** rather than replace it. By managing ambiguity collaboratively, it enables a more inclusive and effective approach to data exploration.
 
 ---
 
 ## Personal Reflection  
-DataTone emphasizes **human-computer collaboration**.  
-By guiding users and providing clarity rather than attempting full automation, it creates a transparent and empowering experience.  
-Its principles continue to influence modern AI-assisted visualization tools.
+DataTone emphasizes **human-computer collaboration**.  By guiding users and providing clarity rather than attempting full automation, it creates a transparent and empowering experience.  Its principles continue to influence modern AI-assisted visualization tools.
 
 ---
 
