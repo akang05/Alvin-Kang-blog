@@ -16,8 +16,24 @@ Presented at **UIST 2015**, this paper introduces **DataTone**, a system that he
 
 ---
 
+## 💬 The Challenge of Natural Language Interfaces  
+Natural language interfaces (NLIs) sound simple — just “type what you want.”  
+But in practice, building one that truly understands users is extremely difficult.  
+
+### Common Challenges:
+- **Ambiguity:** A single phrase can have multiple meanings (“sales by region” could mean by country, by state, or by city).  
+- **Context:** Users may leave out key details, assuming the system “knows” what they mean.  
+- **Synonyms and variations:** People use different words for the same concept (“income,” “revenue,” or “sales”).  
+- **Visualization mapping:** Translating abstract language into visual encodings (axes, marks, colors) is not straightforward.  
+
+Most earlier systems either forced users to use **structured commands** (“show bar chart of sales by country”) or made **incorrect assumptions**.  
+
+*DataTone* addressed this by letting users **guide the system** through interactive clarifications — a human–computer partnership.  
+
+---
+
 ## 🤔 The Problem: Ambiguity in Natural Language  
-Natural language is powerful — but also messy. When a user types something like “sales by region over time,” there are many possible interpretations:  
+Natural language is powerful — but messy. When a user types something like “sales by region over time,” there are many possible interpretations:  
 - Which dataset should it use?  
 - Should “region” refer to country, state, or city?  
 - Should “over time” be shown as a line chart or bar chart?  
@@ -41,15 +57,18 @@ This approach combines the **intuitiveness of natural language** with the **prec
 
 ---
 
-## ⚙️ How DataTone Works  
-The paper describes how DataTone integrates several components:  
+## 🧮 System Architecture Overview  
+While *DataTone* appears simple on the surface, its architecture integrates several sophisticated components:  
 
-- 🧠 **Natural Language Parser:** Breaks down the query into attributes, metrics, and relationships.  
-- ⚖️ **Ambiguity Detector:** Identifies when a query could have multiple interpretations.  
-- 📊 **Visualization Generator:** Suggests chart types and layouts based on the query’s structure.  
-- 🧰 **User Interface Panel:** Displays “ambiguity widgets” that let users clarify uncertain terms (for example, choosing between “region = country” or “region = state”).  
+| Component | Function |
+|------------|-----------|
+| **NL Parser** | Breaks down the query into nouns, verbs, and data references using a custom grammar. |
+| **Data Mapper** | Connects query terms (like “sales,” “region”) to the correct fields in the dataset. |
+| **Ambiguity Manager** | Detects multiple valid mappings and decides when to involve the user. |
+| **Visualization Engine** | Generates chart specifications using the Vega grammar model. |
+| **UI Widgets** | Provides dropdowns, toggles, or icons that let users clarify choices quickly. |
 
-As a result, users can create complex visualizations **without needing to learn syntax or tools like Tableau or D3.js**.  
+Together, these components make *DataTone* both smart and transparent.  
 
 ---
 
@@ -90,6 +109,38 @@ This minimizes frustration and encourages exploration.
 
 ---
 
+## 👩‍🔬 Design Principles and Lessons Learned  
+The DataTone team derived several **interaction design principles** for natural language visualization:  
+
+1. **Embrace ambiguity, don’t hide it.**  
+   Users trust systems more when they see how choices are made.  
+
+2. **Offer lightweight clarification tools.**  
+   A simple dropdown or toggle is faster than rewriting an entire query.  
+
+3. **Keep user context visible.**  
+   DataTone keeps the text query and the visualization in view, making it easy to understand what each part means.  
+
+4. **Blend automation with control.**  
+   The goal is not to replace users’ decision-making but to accelerate it.  
+
+These principles now influence modern **data-centric AI tools** and **co-pilot interfaces** across industries.  
+
+---
+
+## ⚖️ Comparison with Other Systems  
+
+| System | Year | Approach | Limitation |
+|---------|------|-----------|-------------|
+| **IBM ManyEyes** | 2007 | Template-based visualization | No natural language support |
+| **Tableau Ask Data** | 2019 | Natural language querying | Limited ambiguity handling |
+| **Google Data Studio** | 2020 | Text-based commands | Often misinterprets user intent |
+| **DataTone** | 2015 | Shared disambiguation via UI | Early prototype but conceptually advanced |
+
+DataTone stood out because it focused not just on *understanding* language, but on *collaborating* with the user when understanding failed.  
+
+---
+
 ## 🔬 User Study Insights  
 The authors conducted a user study to evaluate how people interacted with DataTone.  
 Key findings include:  
@@ -109,14 +160,6 @@ Instead of punishing vague wording, it **guides users toward clarity**.
 
 ---
 
-## 🧱 Key Contributions  
-1. A **framework for managing ambiguity** in natural language visualization systems.  
-2. A **working prototype (DataTone)** demonstrating shared disambiguation.  
-3. A **user study** confirming that the approach is effective and intuitive.  
-4. A **design principle**: balance automation with human control.  
-
----
-
 ## 💭 Personal Reflection  
 What I found most interesting about *DataTone* is how it captures the **essence of human-computer collaboration**.  
 Instead of pretending AI can perfectly understand us, it acknowledges that communication is a two-way process.  
@@ -133,8 +176,17 @@ While DataTone was an early prototype, its ideas continue to inspire modern syst
 - Integrating **voice commands** for even more natural interaction.  
 - Applying similar ambiguity-handling in **AI assistants** and **data chatbots**.  
 - Using **machine learning** to predict user preferences over time.  
+- Building **multi-modal interfaces** that combine gestures, voice, and text.  
 
 These directions could make natural language visualization even more seamless and personal.  
+
+---
+
+## 📈 Broader Impact  
+Beyond visualization, DataTone’s shared disambiguation model applies to many AI systems — from **chatbots** to **virtual assistants**.  
+It highlights a critical design insight: **users don’t mind clarifying, as long as the system asks intelligently.**  
+
+This mindset continues to shape how companies design **AI-human collaboration** today — from Alexa’s follow-up questions to ChatGPT’s clarification prompts.  
 
 ---
 
