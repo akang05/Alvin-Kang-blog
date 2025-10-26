@@ -144,7 +144,7 @@ DataTone demonstrates several interaction design features:
 
 These examples illustrate how interface design supports natural language understanding and balances automation with user input.
 
-![Natural Language Interface Example](assets/nliv-example.png)
+![Natural Language Interface Example](NLIex.png)
 
 ---
 
